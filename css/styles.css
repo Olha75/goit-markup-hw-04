@@ -222,6 +222,17 @@ ol {
   display: flex;
   gap: 24px;
 }
+.skills-menu-fon {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
 
 .skills-menu-item {
   width: calc((100% - 72px) / 4);
@@ -286,7 +297,6 @@ ol {
 .team-list {
   display: flex;
   gap: 24px;
-
 }
 .team-list-menu {
   background-color: #ffffff;
@@ -294,7 +304,6 @@ ol {
   width: calc((100% - 3 * 24px) / 4);
 }
 .team-img {
-  margin-bottom: 32px;
 }
 .team-working {
   padding: 32px 0;
@@ -316,8 +325,29 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin: 0;
+  margin-bottom: 8px;
 }
+.team-menu-fon1{display: flex;
+  justify-content: center;
+  align-items: center;
+width: 232px;
+height: 40px;
+margin: 0 auto;
+flex-shrink: 0;
+gap: 24px;}
 
+.team-menu-fon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+    display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d5ae5;
+}
+.team-icon{fill: #f4f4fd;}
 /*------------------PORTFOLIO-----------------*/
 .portfolio {
   padding-top: 96px;
