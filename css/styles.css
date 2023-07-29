@@ -16,7 +16,7 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
-  --cornflower: #e7e9fc --8e8f99;
+  --cornflower: #e7e9fc ;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -401,11 +401,13 @@ ol {
   align-items: center;
   justify-content: center;
 }
-.team-link :hover,
-.team-link :focus {
+.team-link :hover{
   background-color: #404bbf;
 }
 
+.team-link :focus {
+  background-color: #404bbf;
+}
 .team-icon {
   fill: #f4f4fd;
 }
@@ -439,10 +441,12 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--#8e8f99;);
+  color: var(--light-slate,#8e8f99);
 }
 
-.customers-link :hover,
+.customers-link :hover {  border-color: #404bbf;
+  color: #404bbf;
+}
 .customers-link :focus {
   border-color: #404bbf;
   color: #404bbf;
@@ -450,6 +454,7 @@ ol {
 
 .customers-menu-item {
   width: calc((100% - 5 * 24px) / 6);
+  height: 88px;
 }
 .customers-menu-fon {
   width: 168px;
