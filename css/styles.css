@@ -97,7 +97,7 @@ ol {
 .header-navigation {
   align-items: center;
   display: flex;
-}
+  }
 
 .header-logo {
   color: var(--iris, #4d5ae5);
@@ -143,6 +143,8 @@ ol {
   color: var(--ocean, #404bbf);
   text-decoration: underline;
   text-decoration: none;
+  transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address {
   font-style: normal;
@@ -155,8 +157,10 @@ ol {
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
-  background: var(--ocean, #404bbf);
-}
+  background: var(--ocean, #404bbf);}
+
+  .current::after{}
+
 
 .header-address-link {
   color: var(--slate, #434455);
@@ -173,7 +177,8 @@ ol {
 .header-address-link:hover,
 .header-address-link:focus {
   color: var(--ocean, #404bbf);
-  text-decoration: none;
+  text-decoration: none;transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*----------------BUSINESS-------------*/
 
@@ -226,6 +231,8 @@ ol {
   background: var(--ocean, #404bbf);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------------SKILLS--------------*/
@@ -406,14 +413,16 @@ ol {
 
 .customers-menu-item :hover,
 .customers-menu-item :focus {
-  border: 1px solid var(--ocean, #404bbf);
+  border: 1px solid var(--ocean, #404bbf);transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-icon {
   fill: #8e8f99;
 }
 .customers-icon :hover,
 .customers-icon :focus {
-  fill: #404bbf;
+  fill: #404bbf;transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------PORTFOLIO-----------------*/
@@ -457,7 +466,8 @@ ol {
   background-color: var(--ocean, #404bbf);
   color: var(--white, #ffffff);
   text-decoration: none;
-  border: 1px solid transparent;
+  border: 1px solid transparent;transition: transform 250ms linear;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-projects-list {
@@ -636,8 +646,9 @@ ol {
   top: 24px;
   right: 24px;
 }
-.modal-close-btn{
+.modal-close-btn {
   position: absolute;
   top: 24px;
 }
-.is-hidden{}
+.is-hidden {opacity: 0; visibility: hidden;pointer-events: none;
+}
