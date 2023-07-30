@@ -642,6 +642,10 @@ ol {
   padding: 100px 0;
   position: relative;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-left {
   margin-right: 120px;
 }
@@ -691,7 +695,7 @@ ol {
   margin-bottom: 16px;
 }
 
-.footer-menu-fon1 {
+.footer-menu-list {
   display: flex;
   /*width: 208px;
   height: 40px;
@@ -752,15 +756,32 @@ ol {
 .modal-close-btn {
 }
 
-.modal-icon {
+.modal-btn {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn {
-  position: absolute;
-  top: 24px;
+.modal-btn :hover,
+.modal-btn :focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
+
+.modal-icon {
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
