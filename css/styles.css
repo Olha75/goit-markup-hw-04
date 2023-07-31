@@ -158,11 +158,12 @@ ol {
   display: flex;
   margin-left: auto;
 }
-.current {
+.header-menu-link :active .current {
 }
 
-.current :hover::before,
+.current :active :hover::before,
 ::after {
+  widht:100%;
   width: 66px;
   height: 4px;
   flex-shrink: 0;
@@ -418,7 +419,7 @@ ol {
 }
 .team-link :hover,
 .team-link :focus {
-  background-color: #404bbf;
+  background-color: var(--ocean, #404bbf);
 }
 .team-icon {
   fill: #f4f4fd;
@@ -460,10 +461,11 @@ ol {
 
 .customers-link :hover,
 .customers-link :focus {
-  border-color: #404bbf;
-  color: #404bbf;
+  border-color: var(--ocean, #404bbf);
+  color: var(--ocean, #404bbf);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers-menu-item {
   width: calc((100% - 5 * 24px) / 6);
   height: 88px;
@@ -559,6 +561,7 @@ ol {
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transform: translateY(0%);*/
 }
 .portfolio-link :hover .portfolio-link :focus {
   transform: translateY(0%);
@@ -778,15 +781,21 @@ ol {
   width: 24px;
   height: 24px;
 }
+
+.modal-close-btn:hover .modal-icon,
+.modal-close-btn:focus .modal-icon {
+  fill: color #ffffff;
+}
+
 .modal-btn :hover,
 .modal-btn :focus {
-  background-color: #404bbf;
+  background-color: var(--ocean, #404bbf);
   border: none;
-  fill: #ffffff;
 }
 
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff;
 }
 
 .is-hidden {
