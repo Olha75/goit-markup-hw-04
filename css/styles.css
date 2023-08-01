@@ -397,7 +397,7 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-menu-fon :hover {
-  background-color: var(--ocean,#404bbf);
+  background-color: var(--ocean, #404bbf);
 }
 .team-menu-fon :focus {
   background-color: #404bbf;
@@ -439,23 +439,13 @@ ol {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-link :hover {
-  border-color: var(--ocean, #404bbf);
+.customers-link :hover { 
   color: #404bbf;
 }
-.customers-link :focus  {
-  border-color: var(--ocean, #404bbf);
-  color: #404bbf;
+.customers-link :focus {  color: #404bbf;
 }
 
-.customers-link :hover .customers-icon {
-  border-color: var(--ocean, #404bbf);
-  color: #404bbf;
-}
-.customers-link :focus .customers-icon {
-  border-color: var(--ocean, #404bbf);
-  color: #404bbf;
-}
+
 .customers-menu-item {
   width: calc((100% - 5 * 24px) / 6);
   height: 88px;
@@ -463,20 +453,15 @@ ol {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-menu-item :hover,
-.customers-menu-item :focus {
-  border: 1px solid var(--ocean, #404bbf);
-
-}
 .customers-icon {
   fill: currentColor;
   transition: transform 250ms linear;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
-  border:none;
 }
 .customers-icon :hover,
 .customers-icon :focus {
   fill: currentColor;
+  
 }
 
 /*------------------PORTFOLIO-----------------*/
@@ -542,19 +527,16 @@ ol {
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(0%);
 }
-.portfolio-link :hover {
-  transform: translateY(0%);
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-link :focus {
-  transform: translateY(0%);
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-link :hover .porfolio-cover-text {
+.portfolio-link:hover .porfolio-cover-text {
   transform: translateY(0%);
 }
 
@@ -564,7 +546,6 @@ ol {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  
 }
 .portfolio-item :hover .porfolio-cover {
   transform: translateY(0);
@@ -581,23 +562,7 @@ ol {
 .portfolio-cover-wrap {
   position: relative;
   overflow: hidden;
-  
 }
-
-/*.porfolio-cover {
-  position: absolute;
-  top: 0;
-  flex-shrink: 0;
-  background: var(--iris, #4d5ae5);
-  height: 100%;
-  width: 100%;
-  padding: 0 32px;
-  padding-top: 40px;
-  display: flex;
-  transform: translateY(100%);
-  transition: transform 250ms linear;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-}*/
 
 .porfolio-cover-text {
   color: var(--cloud, #f4f4fd);
