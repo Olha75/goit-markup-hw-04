@@ -700,6 +700,9 @@ ol {
   background-color: var(--green, #31d0aa);
 }
 
+
+
+
 /*-----------MODAL------------*/
 .backdrop {
   position: fixed;
@@ -752,8 +755,8 @@ ol {
 
 .modal-close-btn :hover,
 .modal-close-btn :focus {
-  background-color: var(--ocean, #404bbf);
   border: none;
+  background-color: #404bbf;
 }
 
 .modal-icon {
