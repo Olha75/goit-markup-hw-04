@@ -453,6 +453,10 @@ ol {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.customers-menu-item :hover,
+.customers-menu-item :focus {
+  border: 1px solid var(--ocean, #404bbf);
+}
 .customers-icon {
   fill: currentColor;
   transition: transform 250ms linear;
@@ -460,7 +464,7 @@ ol {
 }
 .customers-icon :hover,
 .customers-icon :focus {
-  fill: currentColor;
+  fill: currentColor;border:none;
   
 }
 
