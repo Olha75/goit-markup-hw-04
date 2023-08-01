@@ -439,12 +439,12 @@ ol {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-link :hover { 
+.customers-link :hover {
   color: #404bbf;
 }
-.customers-link :focus {  color: #404bbf;
+.customers-link :focus {
+  color: #404bbf;
 }
-
 
 .customers-menu-item {
   width: calc((100% - 5 * 24px) / 6);
@@ -453,10 +453,7 @@ ol {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-menu-item :hover,
-.customers-menu-item :focus {
-  border: 1px solid var(--ocean, #404bbf);
-}
+
 .customers-icon {
   fill: currentColor;
   transition: transform 250ms linear;
@@ -464,8 +461,8 @@ ol {
 }
 .customers-icon :hover,
 .customers-icon :focus {
-  fill: currentColor;border:none;
-  
+  fill: currentColor;
+  border: none;
 }
 
 /*------------------PORTFOLIO-----------------*/
@@ -662,6 +659,7 @@ ol {
 
 .footer-menu-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -700,9 +698,6 @@ ol {
   background-color: var(--green, #31d0aa);
 }
 
-
-
-
 /*-----------MODAL------------*/
 .backdrop {
   position: fixed;
@@ -730,6 +725,7 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .modal-close-btn {
   position: absolute;
   top: 24px;
@@ -746,23 +742,26 @@ ol {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
   height: 24px;
+  
 }
 
-.modal-close-btn:hover .modal-icon,
-.modal-close-btn:focus .modal-icon {
-  fill: color #ffffff;
-}
 
-.modal-close-btn :hover,
-.modal-close-btn :focus {
-  border: none;
-  background-color: #404bbf;
+
+.modal :hover,
+.modal :focus {
+  background-color: var(--ocean, #404bbf);
+  text-decoration: none;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color: #404bbf;
+    fill:#ffffff;
 }
 
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #ffffff;
 }
+.modal-icon :hover, .modal-icon :focus{fill: #ffffff;}
 
 .is-hidden {
   opacity: 0;
