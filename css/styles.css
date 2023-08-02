@@ -566,7 +566,7 @@ ol {
 
 .portfolio-cover-wrap {
   position: relative;
-  overflow: hidden;
+  overflow: hidden;transform: translateY(0%);
 }
 
 .porfolio-cover-text {
