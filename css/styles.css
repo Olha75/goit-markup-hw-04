@@ -453,10 +453,12 @@ ol {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-menu-item :hover {
-  color: #404bbf;border-color: #404bbf
+  color: #404bbf;
+  border-color: #404bbf;
 }
 .customers-menu-item :focus {
-  color: #404bbf;border-color: #404bbf
+  color: #404bbf;
+  border-color: #404bbf;
 }
 .customers-icon {
   fill: currentColor;
@@ -594,7 +596,7 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 0 auto;
 }
 
 /*-----------FOOTER------------*/
@@ -603,13 +605,18 @@ ol {
   background-color: #2e2f42;
   padding: 100px 0;
   position: relative;
+  display: flex;
+  margin: o;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .footer-container {
   display: flex;
   align-items: baseline;
+  
+
 }
 .footer-left {
-  margin-right: 120px;
 }
 .footer-logo {
   color: var(--iris, #4d5ae5);
@@ -638,13 +645,13 @@ ol {
 }
 
 .footer-social-menu {
-  width: 1158px;
+  
   text-align: center;
   margin: 0;
   position: absolute;
   top: 100px;
-  left: 540px;
-  display: flex;
+  left:calc(540px - 156px);
+  display: block;
   align-items: baseline;
 }
 
@@ -656,7 +663,7 @@ ol {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-menu-list {
@@ -673,7 +680,7 @@ ol {
   display: inline-block;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   background-color: var(--iris, #4d5ae5);
 }
 .footer-menu-link {
