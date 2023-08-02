@@ -545,7 +545,7 @@ ol {
   transform: translateY(0%);
 }
 
-.portfolio-link :focus .porfolio-cover-text {
+.portfolio-link:focus .porfolio-cover-text {
   transform: translateY(0%);
 }
 
@@ -566,7 +566,7 @@ ol {
 
 .portfolio-cover-wrap {
   position: relative;
-  overflow: hidden;transform: translateY(0%);
+  overflow: hidden;
 }
 
 .porfolio-cover-text {
