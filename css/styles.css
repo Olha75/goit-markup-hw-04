@@ -616,7 +616,7 @@ ol {
   
 
 }
-.footer-left {
+.footer-left {margin-right: 120px;
 }
 .footer-logo {
   color: var(--iris, #4d5ae5);
