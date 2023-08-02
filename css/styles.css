@@ -452,7 +452,12 @@ ol {
   transition: transform 250ms linear;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.customers-menu-item :hover {
+  color: #404bbf;border-color: #404bbf
+}
+.customers-menu-item :focus {
+  color: #404bbf;border-color: #404bbf
+}
 .customers-icon {
   fill: currentColor;
   transition: transform 250ms linear;
