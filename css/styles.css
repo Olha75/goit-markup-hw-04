@@ -727,6 +727,7 @@ ol {
   background-color: var(--ocean, #404bbf);
   background-color: #404bbf;
   fill: #ffffff;
+  border: none;
 }
 
 .modal-close-btn {
@@ -745,6 +746,9 @@ ol {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
   height: 24px;
+}
+.modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon :hover,
